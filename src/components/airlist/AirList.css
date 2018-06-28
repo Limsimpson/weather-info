@@ -1,0 +1,24 @@
+.AirList {
+    margin-top: 20px;
+}
+
+.AirList>li {
+    float: left;
+    width: 20%;
+    color: #3390ce;
+    text-align: center;
+    line-height: 2.5;
+    border: 2px solid #3390ce;
+    border-left: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.AirList>li:first-child {
+    border-left: 2px solid #3390ce;
+}
+
+.AirList>li.On {
+    color: #fff;
+    background: #3390ce;
+}

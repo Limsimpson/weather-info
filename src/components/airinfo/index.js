@@ -20,7 +20,7 @@ class AirInfo extends Component {
 
     callAirInfo = (measure) => {
         const _this = this;
-        axios.get('http://localhost:8000', {
+        axios.get('http://ec2-52-79-234-248.ap-northeast-2.compute.amazonaws.com:8000', {
             params: {
                 itemCode: measure,
                 dataGubun: 'HOUR',

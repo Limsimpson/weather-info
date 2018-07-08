@@ -19,6 +19,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "proxy": "node src/server/index.js"
+    "proxy": "node src/server/index.js",
+    "start-all": "npm-run-all -p proxy start"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
   }
 }

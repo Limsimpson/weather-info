@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 import SidoList from '../sidolist';
 import { SET_MEASURE } from '../../store/action';
+require('core-js/fn/array/includes');
 
 const sidolist = ['busan','chungbuk','chungnam','daegu','daejeon','gangwon','gwangju',
 'gyeongbuk','gyeonggi','gyeongnam','incheon','jeju','jeonbuk','jeonnam','sejong','seoul',

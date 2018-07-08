@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 import SidoList from '../sidolist';
 import { SET_MEASURE } from '../../store/action';
+require('core-js/fn/array/includes');
 
 const sidolist = ['busan','chungbuk','chungnam','daegu','daejeon','gangwon','gwangju',
 'gyeongbuk','gyeonggi','gyeongnam','incheon','jeju','jeonbuk','jeonnam','sejong','seoul',
@@ -20,7 +21,7 @@ class AirInfo extends Component {
 
     callAirInfo = (measure) => {
         const _this = this;
-        axios.get('http://localhost:8000', {
+        axios.get('http://ec2-52-79-234-248.ap-northeast-2.compute.amazonaws.com:8000', {
             params: {
                 itemCode: measure,
                 dataGubun: 'HOUR',
